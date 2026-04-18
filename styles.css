@@ -763,6 +763,9 @@ a.brand:hover {
 }
 .marquee__track {
   display: flex;
+  /* Size the track to its content so translateX(-50%) lands exactly on
+     the duplicated midpoint — seamless loop at every viewport width. */
+  width: max-content;
   gap: 2.2rem;
   white-space: nowrap;
   animation: slide 42s linear infinite;
@@ -771,6 +774,7 @@ a.brand:hover {
   font-size: 1.35rem;
   color: var(--taupe-deep);
   align-items: center;
+  will-change: transform;
 }
 .marquee__track span[aria-hidden="true"] {
   color: var(--blush-deep);
@@ -1878,5 +1882,12 @@ a.brand:hover {
   [data-reveal] {
     opacity: 1;
     transform: none;
+  }
+  /* Keep the decorative marquee drifting — it's a subtle, low-stakes
+     peripheral motion that shouldn't be suppressed by the blanket rule
+     above. If this becomes a complaint, remove this block. */
+  .marquee__track {
+    animation-duration: 42s !important;
+    animation-iteration-count: infinite !important;
   }
 }
