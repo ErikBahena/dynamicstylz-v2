@@ -1,0 +1,904 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#FAF6F0" />
+    <title>Dynamic Stylz Salon — Elma, WA · Hair by Amber</title>
+    <meta
+      name="description"
+      content="Dynamic Stylz Salon in Elma, Washington. Owned by Amber Aho — 23+ years of styling experience. Family-friendly, sensory-friendly, all ages, all styles. Your hair, your style — done right."
+    />
+    <meta name="author" content="Dynamic Stylz Salon" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="media/branding/logo.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dynamic Stylz Salon — Elma, WA" />
+    <meta
+      property="og:description"
+      content="Warm, welcoming hair salon on Main Street. Owned by Amber Aho. All ages, all styles — done right."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "Dynamic Stylz Salon",
+        "image": "",
+        "telephone": "+1-360-581-2428",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "313 W Main St",
+          "addressLocality": "Elma",
+          "addressRegion": "WA",
+          "postalCode": "98541",
+          "addressCountry": "US"
+        },
+        "founder": "Amber Aho",
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+            "opens": "10:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "10:00",
+            "closes": "16:00"
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============== NAV ============== -->
+    <header class="nav" id="top">
+      <div class="nav__inner">
+        <a
+          class="brand brand--sm"
+          href="#top"
+          aria-label="Dynamic Stylz Salon — home"
+        >
+          <img
+            class="brand__logo"
+            src="media/branding/logo.svg"
+            alt=""
+            width="160"
+            height="160"
+            fetchpriority="high"
+            decoding="async"
+          />
+          <span class="brand__text">
+            <span class="brand__name">Dynamic Stylz Salon</span>
+          </span>
+        </a>
+
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#visit">Visit</a>
+        </nav>
+
+        <a class="btn btn--ghost nav__cta" href="sms:+13605812428"
+          >Book with Amber</a
+        >
+
+        <button
+          class="nav__toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav__mobile" id="mobile-menu" hidden>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+        <a class="btn btn--solid" href="sms:+13605812428">Book with Amber</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============== HERO ============== -->
+      <section class="hero">
+        <div class="hero__grain" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <p class="eyebrow">Est. 2022 · Elma, Washington</p>
+          <h1 class="hero__title">
+            Your hair,<br />
+            your style —<br />
+            <em>done right.</em>
+          </h1>
+          <p class="hero__lede">
+            A warm, welcoming chair on Main Street. Free consultations,
+            expert styling, and sensory-friendly appointments available by
+            request — finished with 23+ years of experience behind every cut,
+            color, and style.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--solid" href="sms:+13605812428"
+              >Call or text Amber</a
+            >
+            <a class="btn btn--link" href="#services"
+              >See services <span aria-hidden="true">→</span></a
+            >
+          </div>
+
+          <dl class="hero__meta" aria-label="Salon highlights">
+            <div>
+              <dt>Rating</dt>
+              <dd>4.7 ★ <span>· 90+ reviews</span></dd>
+            </div>
+            <div>
+              <dt>Since</dt>
+              <dd>Over 23 years<span> behind the chair</span></dd>
+            </div>
+            <div>
+              <dt>Welcomes</dt>
+              <dd>All ages<span> · all styles</span></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__art">
+          <div class="hero__media">
+            <img
+              class="hero__photo"
+              src="media/beautiful-hair.jpg"
+              alt="Long, dimensional hair styled at Dynamic Stylz"
+              width="1536"
+              height="2048"
+              fetchpriority="high"
+              decoding="async"
+            />
+            <div class="hero__mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><use href="#tree-mark" /></svg>
+            </div>
+            <div class="hero__sticker" aria-hidden="true">
+              <span>Hair by</span>
+              <strong>Amber</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== MARQUEE ============== -->
+      <section class="marquee" aria-label="Salon values">
+        <div class="marquee__track">
+          <span>Family-Friendly</span><span aria-hidden="true">✦</span>
+          <span>Sensory-Friendly</span><span aria-hidden="true">✦</span>
+          <span>All Ages</span><span aria-hidden="true">✦</span>
+          <span>All Styles</span><span aria-hidden="true">✦</span>
+          <span>Walk-ins Welcome</span><span aria-hidden="true">✦</span>
+          <span>Free Consultations</span><span aria-hidden="true">✦</span>
+          <!-- duplicated for seamless loop -->
+          <span>Family-Friendly</span><span aria-hidden="true">✦</span>
+          <span>Sensory-Friendly</span><span aria-hidden="true">✦</span>
+          <span>All Ages</span><span aria-hidden="true">✦</span>
+          <span>All Styles</span><span aria-hidden="true">✦</span>
+          <span>Walk-ins Welcome</span><span aria-hidden="true">✦</span>
+          <span>Free Consultations</span><span aria-hidden="true">✦</span>
+        </div>
+      </section>
+
+      <!-- ============== ABOUT ============== -->
+      <section class="about" id="about">
+        <div class="about__grid">
+          <div class="about__art">
+            <div class="portrait">
+              <div class="portrait__media">
+                <img
+                  class="portrait__img"
+                  src="media/amber.png"
+                  alt="Amber Aho, owner and stylist at Dynamic Stylz Salon"
+                  width="448"
+                  height="434"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="portrait__badge" aria-hidden="true">
+                <span>23+</span><small>years</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__body">
+            <p class="eyebrow">Meet your stylist</p>
+            <h2 class="section__title">Amber Aho — owner &amp; stylist.</h2>
+            <p class="lede">
+              Amber has spent more than two decades turning small-town chairs
+              into safe, welcoming spaces. She built Dynamic Stylz as a place
+              where grandparents, teenagers, toddlers, and everyone in between
+              can sit down, be listened to, and leave feeling a little more
+              like themselves.
+            </p>
+            <p>
+              Quiet appointments are available on request — perfect for sensory
+              sensitivities or anyone who just wants a calmer visit. Free
+              consultations are always included, because the best cut starts
+              with a good conversation.
+            </p>
+
+            <ul class="pill-list" aria-label="What Amber loves">
+              <li>Women · Men · Kids</li>
+              <li>Seniors &amp; special-needs care</li>
+              <li>Sensory-friendly chair</li>
+              <li>Free consultations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== SERVICES ============== -->
+      <section class="services" id="services">
+        <header class="section__head">
+          <p class="eyebrow">Services</p>
+          <h2 class="section__title">
+            Every style, rooted in care.
+          </h2>
+          <p class="section__lede">
+            Every service begins with a complimentary consultation.
+          </p>
+        </header>
+
+        <div class="services__grid">
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="media/womens-haircut.jpg"
+                alt="Fresh women's haircut styled at Dynamic Stylz"
+                width="600"
+                height="804"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><use href="#ico-scissors" /></svg>
+              </div>
+              <h3>Women's Cuts &amp; Styling</h3>
+              <p>
+                Lobs, layers, blowouts, and silky finishes — shaped to how you
+                wear it day to day.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="media/beautiful-hair.jpg"
+                alt="Soft, dimensional color on long hair"
+                width="600"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><use href="#ico-drop" /></svg>
+              </div>
+              <h3>Color &amp; Highlights</h3>
+              <p>
+                All-over color, balayage, dimensional highlights, and gentle
+                gray blending — mapped to your skin tone.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="media/stylist-at-work.jpg"
+                alt="Stylist finishing a soft, textured wave"
+                width="1200"
+                height="630"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><use href="#ico-wave" /></svg>
+              </div>
+              <h3>Perms &amp; Texture</h3>
+              <p>
+                Classic perms and soft modern waves — movement tailored to
+                your hair type and lifestyle.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="media/kids-cut.jpg"
+                alt="Happy child after a first-chair kids' cut"
+                width="600"
+                height="599"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><use href="#ico-leaf" /></svg>
+              </div>
+              <h3>Kids' Cuts &amp; First Chairs</h3>
+              <p>
+                First haircuts, back-to-school trims, and sensory-friendly
+                appointments — calm pace, gentle tools.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="media/mens-cut.jpg"
+                alt="Classic men's cut finished at the chair"
+                width="600"
+                height="868"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><use href="#ico-sparkle" /></svg>
+              </div>
+              <h3>Men's Cuts &amp; Clean-Ups</h3>
+              <p>
+                Fades, tapers, clipper cuts, and classic scissor work — quick,
+                precise, Monday-morning ready.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img
+                src="media/beautiful-hair.jpg"
+                alt="Event-ready styling with soft waves"
+                width="600"
+                height="800"
+                loading="lazy"
+                decoding="async"
+                style="object-position: center 30%"
+              />
+            </div>
+            <div class="card__body">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><use href="#ico-brow" /></svg>
+              </div>
+              <h3>Event Styling, Brows &amp; Makeup</h3>
+              <p>
+                Weddings, prom, homecoming — updos, brows, and makeup that
+                hold through the dance floor.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <p class="services__note">
+          Pricing varies by length, density, and time in the chair. A free
+          consultation is always the first step —
+          <a href="sms:+13605812428">text Amber</a> for a quote.
+        </p>
+      </section>
+
+      <!-- ============== EXPERIENCE ============== -->
+      <section class="experience" id="experience">
+        <div class="experience__bg" aria-hidden="true">
+          <svg viewBox="0 0 800 520" preserveAspectRatio="xMidYMid slice">
+            <use href="#tree-of-life" transform="translate(140 -60) scale(1)" />
+          </svg>
+        </div>
+
+        <div class="experience__inner">
+          <p class="eyebrow eyebrow--light">The Dynamic Stylz difference</p>
+          <h2 class="section__title section__title--light">
+            A quieter kind of salon.
+          </h2>
+
+          <div class="experience__grid">
+            <div>
+              <h3>Sensory-friendly</h3>
+              <p>
+                Quiet appointments available on request — lower lighting,
+                minimal small talk, no pressure. Everyone deserves a good
+                haircut.
+              </p>
+            </div>
+            <div>
+              <h3>All ages, all styles</h3>
+              <p>
+                First haircuts to silver transitions. Classic fades, modern
+                color, and everything Main Street in between.
+              </p>
+            </div>
+            <div>
+              <h3>Warm &amp; welcoming</h3>
+              <p>
+                Small-town hospitality with big-city skill. Come as you are —
+                leave a little lighter.
+              </p>
+            </div>
+            <div>
+              <h3>Free consultations</h3>
+              <p>
+                Not sure where to start? Book a consultation. No commitment,
+                just a real conversation about your hair.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== REVIEWS ============== -->
+      <section class="reviews" id="reviews">
+        <header class="section__head">
+          <p class="eyebrow">With love from Elma</p>
+          <h2 class="section__title">
+            Real words, from real chairs.
+          </h2>
+          <p class="section__lede">
+            What clients say after they leave the chair.
+          </p>
+        </header>
+
+        <div class="reviews__featured">
+          <article class="review-card review-card--photo">
+            <div class="review-card__media">
+              <img
+                src="media/shannon-j.jpg"
+                alt="Shannon with her finished look"
+                width="900"
+                height="1200"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="review-card__body">
+              <div class="review-card__stars" aria-label="Five stars">
+                ★★★★★
+              </div>
+              <blockquote>
+                <p>
+                  Amber is absolutely amazing. She took my hair from a
+                  grown-out mess to exactly what I had in mind — the salon
+                  is warm and welcoming.
+                </p>
+              </blockquote>
+              <div class="review-card__caption">
+                <span class="review-card__name">Shannon J.</span>
+                <span class="review-card__source">Facebook</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card review-card--photo">
+            <div class="review-card__media">
+              <img
+                src="media/karna.jpg"
+                alt="Karna with her new color from Dynamic Stylz"
+                width="600"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="review-card__body">
+              <div class="review-card__stars" aria-label="Five stars">
+                ★★★★★
+              </div>
+              <blockquote>
+                <p>
+                  Best haircut I have had in years. Fair pricing, honest
+                  consultation, and the color came out exactly how we
+                  talked about.
+                </p>
+              </blockquote>
+              <div class="review-card__caption">
+                <span class="review-card__name">Karna M.</span>
+                <span class="review-card__source">Google</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="reviews__strip">
+          <figure class="review-card review-card--quote">
+            <div class="review-card__stars" aria-label="Five stars">
+              ★★★★★
+            </div>
+            <blockquote>
+              <p>
+                My whole family goes here. Great with the kids, patient
+                with my teenager, and I always leave feeling like myself.
+              </p>
+            </blockquote>
+            <figcaption class="review-card__caption">
+              <span class="review-card__name">Jessica R.</span>
+              <span class="review-card__source">Facebook</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review-card review-card--quote">
+            <div class="review-card__stars" aria-label="Five stars">
+              ★★★★★
+            </div>
+            <blockquote>
+              <p>
+                The team worked with me on a quiet, low-sensory appointment
+                and it made all the difference. So grateful for a salon
+                that actually listens.
+              </p>
+            </blockquote>
+            <figcaption class="review-card__caption">
+              <span class="review-card__name">Megan T.</span>
+              <span class="review-card__source">Direct</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review-card review-card--quote">
+            <div class="review-card__stars" aria-label="Five stars">
+              ★★★★★
+            </div>
+            <blockquote>
+              <p>
+                Been going here for years. Always professional, always
+                kind, and every cut leaves me feeling confident.
+              </p>
+            </blockquote>
+            <figcaption class="review-card__caption">
+              <span class="review-card__name">Dana K.</span>
+              <span class="review-card__source">Facebook</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="reviews__foot">
+          More on
+          <a
+            href="https://share.google/Xkcxld1KoMv3huCpK"
+            target="_blank"
+            rel="noopener"
+            >Google</a
+          >
+          &amp;
+          <a
+            href="https://www.facebook.com/AmberStuderStylist/photos"
+            target="_blank"
+            rel="noopener"
+            >Facebook</a
+          >.
+        </p>
+      </section>
+
+      <!-- ============== VISIT ============== -->
+      <section class="visit" id="visit">
+        <div class="visit__grid">
+          <div class="visit__copy">
+            <p class="eyebrow">Visit the chair</p>
+            <h2 class="section__title">313 W Main St · Elma, WA</h2>
+            <p class="lede">
+              Third door down from Dollar Tree on Main Street. Park behind
+              Dollar Tree (alley entrance) or right on Main.
+            </p>
+
+            <div class="visit__blocks">
+              <div class="visit__block">
+                <h3>Hours</h3>
+                <ul class="hours">
+                  <li><span>Mon – Thu</span><span>10:00 – 5:00</span></li>
+                  <li><span>Friday</span><span>10:00 – 4:00</span></li>
+                  <li><span>Sat &amp; Sun</span><span>Closed</span></li>
+                </ul>
+              </div>
+
+              <div class="visit__block">
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                  <li>
+                    <a href="tel:+13605812428">(360) 581-2428</a>
+                  </li>
+                  <li>
+                    <a href="sms:+13605812428">Text Amber directly</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/AmberStuderStylist/"
+                      target="_blank"
+                      rel="noopener"
+                      >Facebook · @AmberStuderStylist</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="visit__booking">
+              <em>Appointments preferred</em> · walk-ins welcome when the
+              chair is open. Currently booking a few weeks out — reach out
+              early for weekends and events.
+            </p>
+
+            <div class="visit__cta">
+              <a class="btn btn--solid" href="sms:+13605812428"
+                >Text to book</a
+              >
+              <a class="btn btn--ghost" href="tel:+13605812428"
+                >Call (360) 581-2428</a
+              >
+            </div>
+          </div>
+
+          <aside class="visit__card" aria-label="Find us on the map">
+            <div class="mapcard">
+              <div class="mapcard__top">
+                <iframe
+                  class="mapcard__map"
+                  title="Map to Dynamic Stylz Salon, 313 W Main St, Elma, WA 98541"
+                  src="https://www.google.com/maps?q=313+W+Main+St+Elma+WA+98541&hl=en&z=15&output=embed"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="mapcard__body">
+                <p class="mapcard__name">Dynamic Stylz Salon</p>
+                <p class="mapcard__addr">
+                  313 W Main St<br />
+                  Elma, WA 98541
+                </p>
+                <a
+                  class="mapcard__directions"
+                  href="https://maps.google.com/?q=313+W+Main+St+Elma+WA+98541"
+                  target="_blank"
+                  rel="noopener"
+                  >Directions <span aria-hidden="true">→</span></a
+                >
+                <p class="mapcard__note">
+                  Third door from Dollar Tree · alley parking
+                </p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============== FOOTER ============== -->
+    <footer class="foot">
+      <div class="foot__inner">
+        <div class="foot__brand">
+          <div class="brand brand--lg brand--light">
+            <img
+              class="brand__logo"
+              src="media/branding/logo.svg"
+              alt=""
+              width="160"
+              height="160"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="brand__text">
+              <span class="brand__name">Dynamic Stylz Salon</span>
+              <span class="brand__sub">Elma, WA</span>
+            </div>
+          </div>
+          <p class="foot__motto">Your hair, your style — done right.</p>
+        </div>
+        <nav class="foot__nav" aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#visit">Visit</a>
+        </nav>
+        <div class="foot__meta">
+          <p>© <span id="year"></span> Dynamic Stylz Salon, LLC</p>
+          <p>Crafted with care in Elma, WA · Grays Harbor County</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============== SVG SPRITE ============== -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <!-- ===== Tree of Life (hero) ===== -->
+        <symbol id="tree-of-life" viewBox="0 0 520 640">
+          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <!-- outer ring -->
+            <circle cx="260" cy="280" r="248" stroke-width="1.25" opacity="0.35" />
+            <circle cx="260" cy="280" r="238" stroke-width="0.75" opacity="0.55" />
+
+            <!-- trunk -->
+            <path
+              d="M260 520 C 252 480 252 430 260 380 C 268 430 268 480 260 520 Z"
+              fill="currentColor"
+              opacity="0.9"
+              stroke="none"
+            />
+            <path d="M260 520 L260 380" stroke-width="2" opacity="0.9" />
+
+            <!-- roots -->
+            <g stroke-width="1.4" opacity="0.85">
+              <path d="M260 520 C 240 540 210 548 180 546" />
+              <path d="M260 520 C 230 540 200 556 170 570" />
+              <path d="M260 520 C 252 548 240 568 214 590" />
+              <path d="M260 520 C 280 540 310 548 340 546" />
+              <path d="M260 520 C 290 540 320 556 350 570" />
+              <path d="M260 520 C 268 548 280 568 306 590" />
+              <path d="M260 520 C 260 560 258 590 258 616" />
+            </g>
+
+            <!-- lower branches -->
+            <g stroke-width="1.6" opacity="0.9">
+              <path d="M260 380 C 230 370 200 358 170 338" />
+              <path d="M260 380 C 290 370 320 358 350 338" />
+              <path d="M260 360 C 226 346 196 328 170 302" />
+              <path d="M260 360 C 294 346 324 328 350 302" />
+            </g>
+
+            <!-- upper branches -->
+            <g stroke-width="1.4" opacity="0.9">
+              <path d="M260 320 C 232 300 208 278 188 248" />
+              <path d="M260 320 C 288 300 312 278 332 248" />
+              <path d="M260 290 C 238 264 216 234 202 200" />
+              <path d="M260 290 C 282 264 304 234 318 200" />
+              <path d="M260 260 C 252 220 246 180 246 148" />
+              <path d="M260 260 C 268 220 274 180 274 148" />
+            </g>
+
+            <!-- fine twigs & leaves -->
+            <g stroke-width="1" opacity="0.85">
+              <path d="M170 338 C 160 330 146 322 130 318" />
+              <path d="M350 338 C 360 330 374 322 390 318" />
+              <path d="M170 302 C 156 296 140 288 122 286" />
+              <path d="M350 302 C 364 296 380 288 398 286" />
+              <path d="M188 248 C 174 244 158 240 142 242" />
+              <path d="M332 248 C 346 244 362 240 378 242" />
+              <path d="M202 200 C 188 196 170 196 154 200" />
+              <path d="M318 200 C 332 196 350 196 366 200" />
+              <path d="M246 148 C 232 130 214 112 196 102" />
+              <path d="M274 148 C 288 130 306 112 324 102" />
+              <path d="M260 140 C 258 118 256 96 260 78" />
+            </g>
+
+            <!-- leaf dots -->
+            <g fill="currentColor" opacity="0.9" stroke="none">
+              <circle cx="130" cy="318" r="3" />
+              <circle cx="122" cy="286" r="3" />
+              <circle cx="142" cy="242" r="3" />
+              <circle cx="154" cy="200" r="3" />
+              <circle cx="196" cy="102" r="3.5" />
+              <circle cx="260" cy="78" r="3.5" />
+              <circle cx="324" cy="102" r="3.5" />
+              <circle cx="366" cy="200" r="3" />
+              <circle cx="378" cy="242" r="3" />
+              <circle cx="398" cy="286" r="3" />
+              <circle cx="390" cy="318" r="3" />
+
+              <circle cx="214" cy="128" r="2.2" opacity="0.75" />
+              <circle cx="306" cy="128" r="2.2" opacity="0.75" />
+              <circle cx="180" cy="268" r="2.2" opacity="0.75" />
+              <circle cx="340" cy="268" r="2.2" opacity="0.75" />
+              <circle cx="160" cy="218" r="2.2" opacity="0.75" />
+              <circle cx="360" cy="218" r="2.2" opacity="0.75" />
+            </g>
+
+            <!-- root tips -->
+            <g fill="currentColor" opacity="0.75" stroke="none">
+              <circle cx="180" cy="546" r="2.5" />
+              <circle cx="170" cy="570" r="2.5" />
+              <circle cx="214" cy="590" r="2.5" />
+              <circle cx="258" cy="616" r="2.5" />
+              <circle cx="306" cy="590" r="2.5" />
+              <circle cx="350" cy="570" r="2.5" />
+              <circle cx="340" cy="546" r="2.5" />
+            </g>
+          </g>
+        </symbol>
+
+        <!-- ===== Small tree mark (logo) ===== -->
+        <symbol id="tree-mark" viewBox="0 0 64 64">
+          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="32" cy="32" r="29" stroke-width="1.25" opacity="0.9" />
+            <path d="M32 52 L32 32" stroke-width="1.6" />
+            <path d="M32 52 C 26 54 20 54 16 52" stroke-width="1.1" />
+            <path d="M32 52 C 38 54 44 54 48 52" stroke-width="1.1" />
+            <path d="M32 32 C 24 28 18 24 14 18" stroke-width="1.3" />
+            <path d="M32 32 C 40 28 46 24 50 18" stroke-width="1.3" />
+            <path d="M32 26 C 28 20 26 14 26 10" stroke-width="1.1" />
+            <path d="M32 26 C 36 20 38 14 38 10" stroke-width="1.1" />
+            <g fill="currentColor" stroke="none">
+              <circle cx="14" cy="18" r="1.6" />
+              <circle cx="50" cy="18" r="1.6" />
+              <circle cx="26" cy="10" r="1.4" />
+              <circle cx="38" cy="10" r="1.4" />
+              <circle cx="32" cy="6" r="1.4" />
+            </g>
+          </g>
+        </symbol>
+
+        <!-- ===== Service icons ===== -->
+        <symbol id="ico-scissors" viewBox="0 0 48 48">
+          <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="14" r="4" />
+            <circle cx="12" cy="34" r="4" />
+            <path d="M15 16 L40 34" />
+            <path d="M15 32 L40 14" />
+            <path d="M27 24 L40 28" />
+            <path d="M27 24 L40 20" />
+          </g>
+        </symbol>
+        <symbol id="ico-drop" viewBox="0 0 48 48">
+          <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 6 C 30 16 38 24 38 32 a14 14 0 0 1 -28 0 C 10 24 18 16 24 6 Z" />
+            <path d="M18 30 C 18 36 22 38 24 38" opacity="0.6" />
+          </g>
+        </symbol>
+        <symbol id="ico-wave" viewBox="0 0 48 48">
+          <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 18 C 12 12 18 24 24 18 C 30 12 36 24 42 18" />
+            <path d="M6 28 C 12 22 18 34 24 28 C 30 22 36 34 42 28" />
+            <path d="M6 38 C 12 32 18 44 24 38 C 30 32 36 44 42 38" opacity="0.7" />
+          </g>
+        </symbol>
+        <symbol id="ico-leaf" viewBox="0 0 48 48">
+          <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 38 C 10 22 22 10 38 10 C 38 26 26 38 10 38 Z" />
+            <path d="M10 38 L30 18" />
+          </g>
+        </symbol>
+        <symbol id="ico-sparkle" viewBox="0 0 48 48">
+          <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 6 L27 20 L41 24 L27 28 L24 42 L21 28 L7 24 L21 20 Z" />
+            <path d="M38 6 L40 12 L46 14 L40 16 L38 22 L36 16 L30 14 L36 12 Z" opacity="0.7" />
+          </g>
+        </symbol>
+        <symbol id="ico-brow" viewBox="0 0 48 48">
+          <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 22 C 16 14 32 14 40 22" />
+            <path d="M10 26 C 18 20 30 20 38 26" opacity="0.55" />
+            <circle cx="18" cy="32" r="1.5" fill="currentColor" stroke="none" />
+            <circle cx="30" cy="32" r="1.5" fill="currentColor" stroke="none" />
+          </g>
+        </symbol>
+      </defs>
+    </svg>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node (none in use, but safe to exclude)
+node_modules/
+
+# Vercel
+.vercel
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
