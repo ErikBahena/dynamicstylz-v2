@@ -1779,7 +1779,11 @@ a.brand:hover {
   .card__media {
     flex: 0 0 40%;
     max-width: 148px;
-    aspect-ratio: 1 / 1;
+    /* Release the square ratio so the media stretches to match the
+       card's actual height when text is tall — otherwise Safari pins
+       the cross-axis to 148px and the text column overflows. */
+    aspect-ratio: auto;
+    min-height: 148px;
   }
   .card__media::after {
     /* vertical gradient on the inside edge for depth */
@@ -1792,7 +1796,11 @@ a.brand:hover {
   .card__body {
     padding: 0.9rem 1rem 0.95rem 1.05rem;
     gap: 0.25rem;
-    justify-content: center;
+    /* "safe center" centers the text when there's room but falls back
+       to flex-start when content would overflow — prevents Safari from
+       clipping the top of tall text behind the card's overflow:hidden. */
+    justify-content: safe center;
+    min-width: 0;
   }
   .card__icon {
     /* tiny inline mark instead of the overlapping chip */
