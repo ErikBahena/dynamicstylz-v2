@@ -58,6 +58,9 @@
 }
 html {
   scroll-behavior: smooth;
+  /* Offset hash-link landings so the sticky nav doesn't cover the section head.
+     Nav is ~70px on mobile, ~82px on desktop; 96px gives a small breathing buffer. */
+  scroll-padding-top: 96px;
   -webkit-text-size-adjust: 100%;
   overflow-x: clip;
 }
