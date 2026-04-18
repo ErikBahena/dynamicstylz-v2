@@ -1325,6 +1325,35 @@ a.brand:hover {
 .hours li span:last-child {
   color: var(--ink-soft);
 }
+.hours__source {
+  margin: 0.7rem 0 0;
+  font-size: 0.62rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.hours__source::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ink-mute);
+}
+.hours__source[data-open-now="true"] {
+  color: var(--blush-deep);
+}
+.hours__source[data-open-now="true"]::before {
+  background: #4a8f5c; /* subtle open-green pip */
+  box-shadow: 0 0 0 3px rgba(74, 143, 92, 0.15);
+}
+.hours__source[data-open-now="false"]::before {
+  background: var(--ink-mute);
+  opacity: 0.6;
+}
 .contact-list {
   list-style: none;
   padding: 0;
