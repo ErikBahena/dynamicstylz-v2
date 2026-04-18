@@ -1,0 +1,26 @@
+{
+  "name": "Dynamic Stylz Salon — Elma, WA",
+  "short_name": "Dynamic Stylz",
+  "description": "Warm, welcoming hair salon on Main Street, Elma, WA. Cuts, color, kids' cuts, and sensory-friendly appointments by Amber Aho.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF6F0",
+  "theme_color": "#FAF6F0",
+  "categories": ["lifestyle", "beauty", "local"],
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/media/branding/logo.png",
+      "sizes": "360x351",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

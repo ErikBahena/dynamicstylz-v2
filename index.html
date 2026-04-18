@@ -1,33 +1,115 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#FAF6F0" />
-    <title>Dynamic Stylz Salon — Elma, WA · Hair by Amber</title>
+
+    <!-- Page identity ======================================================= -->
+    <title>Dynamic Stylz Salon — Hair Salon in Elma, WA</title>
     <meta
       name="description"
-      content="Dynamic Stylz Salon in Elma, Washington. Owned by Amber Aho — 23+ years of styling experience. Family-friendly, sensory-friendly, all ages, all styles. Your hair, your style — done right."
+      content="Warm, welcoming family hair salon in Elma, WA. Cuts, color, balayage, highlights, perms, kids' cuts, event styling, and sensory-friendly appointments — 23+ years of styling experience by Amber Aho. Serving Grays Harbor County."
     />
-    <meta name="author" content="Dynamic Stylz Salon" />
+    <meta
+      name="keywords"
+      content="hair salon Elma WA, haircut Elma WA, hair color Elma, balayage Grays Harbor, highlights Elma WA, kids haircut Elma, men's haircut Elma WA, women's haircut Elma WA, perm Elma WA, salon near me, Dynamic Stylz Salon, Amber Aho stylist, sensory friendly salon, family salon Elma, Grays Harbor hair stylist"
+    />
+    <meta name="author" content="Dynamic Stylz Salon LLC" />
+    <meta name="publisher" content="Dynamic Stylz Salon LLC" />
+    <meta name="application-name" content="Dynamic Stylz Salon" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <meta name="format-detection" content="telephone=yes, address=yes, email=yes" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" href="media/branding/logo.png" />
+    <!-- Robots directives — explicit so Google/Bing know how rich previews
+         can be. `max-image-preview: large` is what gets you the big
+         photo next to your SERP result. -->
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Dynamic Stylz Salon — Elma, WA" />
+    <!-- Canonical — with both apex and www. live, this picks the winner
+         so Google doesn't pick one itself. -->
+    <link rel="canonical" href="https://dynamicstylz.com/" />
+
+    <!-- Color scheme / theme color — light + dark pair so the mobile
+         address bar + PWA title bar match the editorial palette. -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#FAF6F0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1F1A17" media="(prefers-color-scheme: dark)" />
+
+    <!-- Icons ================================================================
+         Favicon (.svg + .ico), 180×180 Apple touch icon, and a monochrome
+         Safari pinned-tab mask. macOS Safari still reads the mask-icon. -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1f1a17" />
+
+    <!-- PWA manifest — also drives Google's mobile category hints
+         (lifestyle / beauty / local). -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Open Graph =========================================================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dynamic Stylz Salon" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://dynamicstylz.com/" />
+    <meta property="og:title" content="Dynamic Stylz Salon — Hair Salon in Elma, WA" />
     <meta
       property="og:description"
-      content="Warm, welcoming hair salon on Main Street. Owned by Amber Aho. All ages, all styles — done right."
+      content="Warm, welcoming family hair salon on Main Street. Cuts, color, kids' cuts, and sensory-friendly appointments — 23+ years behind the chair by Amber Aho."
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://dynamicstylz.com/media/stylist-at-work.jpg" />
+    <meta property="og:image:secure_url" content="https://dynamicstylz.com/media/stylist-at-work.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dynamic Stylz Salon — hair styling in Elma, WA" />
 
-    <!-- Fonts -->
+    <!-- Twitter / X ========================================================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dynamic Stylz Salon — Hair Salon in Elma, WA" />
+    <meta
+      name="twitter:description"
+      content="Warm, welcoming family hair salon on Main Street. Cuts, color, kids' cuts, and sensory-friendly appointments — 23+ years behind the chair by Amber Aho."
+    />
+    <meta name="twitter:image" content="https://dynamicstylz.com/media/stylist-at-work.jpg" />
+    <meta name="twitter:image:alt" content="Dynamic Stylz Salon — hair styling in Elma, WA" />
+
+    <!-- Local-SEO / geo hints ================================================
+         Older crawlers (Bing, some directories) still read these. -->
+    <meta name="geo.region" content="US-WA" />
+    <meta name="geo.placename" content="Elma, WA" />
+    <meta name="geo.position" content="47.00378;-123.40797" />
+    <meta name="ICBM" content="47.00378, -123.40797" />
+
+    <!-- Facebook/LinkedIn business contact hints -->
+    <meta property="business:contact_data:street_address" content="313 W Main St" />
+    <meta property="business:contact_data:locality" content="Elma" />
+    <meta property="business:contact_data:region" content="WA" />
+    <meta property="business:contact_data:postal_code" content="98541" />
+    <meta property="business:contact_data:country_name" content="United States" />
+    <meta property="business:contact_data:phone_number" content="(360) 581-2428" />
+    <meta property="business:contact_data:website" content="https://dynamicstylz.com" />
+
+    <!-- Search engine ownership — drop the value into content="" when
+         the property is claimed in Search Console / Bing Webmaster. -->
+    <!-- <meta name="google-site-verification" content="" /> -->
+    <!-- <meta name="msvalidate.01" content="" /> -->
+
+    <!-- Fonts ================================================================
+         External Google Fonts CDN, preconnected so the CSS fetch starts
+         before HTML parsing finishes. Map preconnects also live here so
+         the iframe starts resolving before it scrolls into view. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://maps.google.com" />
+    <link rel="preconnect" href="https://maps.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
@@ -35,36 +117,384 @@
 
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- Structured data -->
+    <!-- Structured data (schema.org JSON-LD) =================================
+         Single @graph with every entity cross-referenced by @id:
+           - HairSalon + LocalBusiness (the business)
+           - Service x6 (matching on-page service cards)
+           - Person (Amber Aho)
+           - FAQPage (9 Q&A)
+           - Organization (publisher)
+           - WebSite (sitelinks hook)
+           - BreadcrumbList
+         Intentionally NO AggregateRating/Review — Google banned self-
+         serving review markup in 2019; star ratings should come from the
+         Google Business Profile, not our own JSON-LD. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HairSalon",
-        "name": "Dynamic Stylz Salon",
-        "image": "",
-        "telephone": "+1-360-581-2428",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "313 W Main St",
-          "addressLocality": "Elma",
-          "addressRegion": "WA",
-          "postalCode": "98541",
-          "addressCountry": "US"
-        },
-        "founder": "Amber Aho",
-        "priceRange": "$$",
-        "openingHoursSpecification": [
+        "@graph": [
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-            "opens": "10:00",
-            "closes": "17:00"
+            "@type": ["HairSalon", "LocalBusiness"],
+            "@id": "https://dynamicstylz.com/#business",
+            "name": "Dynamic Stylz Salon",
+            "legalName": "Dynamic Stylz Salon LLC",
+            "url": "https://dynamicstylz.com/",
+            "description": "Warm, welcoming family hair salon in Elma, WA. Cuts, color, balayage, highlights, perms, kids' cuts, event styling, and sensory-friendly appointments — 23+ years of styling experience by Amber Aho. Serving Grays Harbor County.",
+            "image": "https://dynamicstylz.com/media/stylist-at-work.jpg",
+            "logo": "https://dynamicstylz.com/media/branding/logo.png",
+            "telephone": "+13605812428",
+            "priceRange": "$$",
+            "currenciesAccepted": "USD",
+            "paymentAccepted": "Cash, Credit Card, Debit Card",
+            "foundingDate": "2022",
+            "slogan": "Your hair, your style — done right.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "313 W Main St",
+              "addressLocality": "Elma",
+              "addressRegion": "WA",
+              "postalCode": "98541",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 47.00378,
+              "longitude": -123.40797
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Elma",       "containedInPlace": { "@type": "AdministrativeArea", "name": "Grays Harbor County" } },
+              { "@type": "City", "name": "Montesano",  "containedInPlace": { "@type": "AdministrativeArea", "name": "Grays Harbor County" } },
+              { "@type": "City", "name": "McCleary",   "containedInPlace": { "@type": "AdministrativeArea", "name": "Grays Harbor County" } },
+              { "@type": "City", "name": "Aberdeen",   "containedInPlace": { "@type": "AdministrativeArea", "name": "Grays Harbor County" } },
+              { "@type": "City", "name": "Hoquiam",    "containedInPlace": { "@type": "AdministrativeArea", "name": "Grays Harbor County" } },
+              { "@type": "City", "name": "Satsop",     "containedInPlace": { "@type": "AdministrativeArea", "name": "Grays Harbor County" } },
+              { "@type": "City", "name": "Oakville",   "containedInPlace": { "@type": "AdministrativeArea", "name": "Grays Harbor County" } },
+              { "@type": "City", "name": "Malone",     "containedInPlace": { "@type": "AdministrativeArea", "name": "Grays Harbor County" } },
+              { "@type": "City", "name": "Porter",     "containedInPlace": { "@type": "AdministrativeArea", "name": "Grays Harbor County" } }
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                "opens": "10:00",
+                "closes": "17:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Friday",
+                "opens": "10:00",
+                "closes": "16:00"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/AmberStuderStylist/",
+              "https://share.google/Xkcxld1KoMv3huCpK"
+            ],
+            "hasMap": "https://www.google.com/maps/search/?api=1&query=313+W+Main+St%2C+Elma%2C+WA+98541",
+            "isAccessibleForFree": true,
+            "publicAccess": true,
+            "amenityFeature": [
+              { "@type": "LocationFeatureSpecification", "name": "Sensory-friendly appointments", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Walk-ins welcome",              "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Family-friendly",               "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Free consultations",            "value": true }
+            ],
+            "knowsAbout": [
+              "Haircut",
+              "Hair Color",
+              "Balayage",
+              "Highlights",
+              "Perm",
+              "Men's haircut",
+              "Women's haircut",
+              "Kids' haircut",
+              "Wash and style",
+              "Updo",
+              "Special occasion hair",
+              "Brows",
+              "Makeup"
+            ],
+            "employee": [{ "@id": "https://dynamicstylz.com/#person/amber" }],
+            "makesOffer": [
+              { "@id": "https://dynamicstylz.com/#service/womens-cuts" },
+              { "@id": "https://dynamicstylz.com/#service/color-highlights" },
+              { "@id": "https://dynamicstylz.com/#service/perms-texture" },
+              { "@id": "https://dynamicstylz.com/#service/kids-cuts" },
+              { "@id": "https://dynamicstylz.com/#service/mens-cuts" },
+              { "@id": "https://dynamicstylz.com/#service/event-styling" }
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Salon Services",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@id": "https://dynamicstylz.com/#service/womens-cuts" },      "price": "Consultation", "priceCurrency": "USD" },
+                { "@type": "Offer", "itemOffered": { "@id": "https://dynamicstylz.com/#service/color-highlights" }, "price": "Consultation", "priceCurrency": "USD" },
+                { "@type": "Offer", "itemOffered": { "@id": "https://dynamicstylz.com/#service/perms-texture" },    "price": "Consultation", "priceCurrency": "USD" },
+                { "@type": "Offer", "itemOffered": { "@id": "https://dynamicstylz.com/#service/kids-cuts" },        "price": "Consultation", "priceCurrency": "USD" },
+                { "@type": "Offer", "itemOffered": { "@id": "https://dynamicstylz.com/#service/mens-cuts" },        "price": "Consultation", "priceCurrency": "USD" },
+                { "@type": "Offer", "itemOffered": { "@id": "https://dynamicstylz.com/#service/event-styling" },    "price": "Consultation", "priceCurrency": "USD" }
+              ]
+            }
+          },
+
+          {
+            "@type": "Service",
+            "@id": "https://dynamicstylz.com/#service/womens-cuts",
+            "name": "Women's Cuts & Styling",
+            "description": "Lobs, layers, blowouts, and silky finishes — shaped to how you wear it day to day.",
+            "serviceType": "Women's Haircut & Styling",
+            "category": "Women's Hair Services",
+            "provider": { "@id": "https://dynamicstylz.com/#business" },
+            "areaServed": [
+              { "@type": "City", "name": "Elma" }, { "@type": "City", "name": "Montesano" },
+              { "@type": "City", "name": "McCleary" }, { "@type": "City", "name": "Aberdeen" },
+              { "@type": "City", "name": "Hoquiam" }, { "@type": "City", "name": "Satsop" },
+              { "@type": "City", "name": "Oakville" }, { "@type": "City", "name": "Malone" },
+              { "@type": "City", "name": "Porter" }
+            ],
+            "image": "https://dynamicstylz.com/media/womens-haircut.jpg",
+            "offers": { "@type": "Offer", "price": "Consultation", "priceCurrency": "USD", "url": "https://dynamicstylz.com/#services" }
           },
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Friday",
-            "opens": "10:00",
-            "closes": "16:00"
+            "@type": "Service",
+            "@id": "https://dynamicstylz.com/#service/color-highlights",
+            "name": "Color & Highlights",
+            "description": "All-over color, balayage, dimensional highlights, and gentle gray blending — mapped to your skin tone.",
+            "serviceType": "Hair Color",
+            "category": "Hair Color",
+            "provider": { "@id": "https://dynamicstylz.com/#business" },
+            "areaServed": [
+              { "@type": "City", "name": "Elma" }, { "@type": "City", "name": "Montesano" },
+              { "@type": "City", "name": "McCleary" }, { "@type": "City", "name": "Aberdeen" },
+              { "@type": "City", "name": "Hoquiam" }, { "@type": "City", "name": "Satsop" },
+              { "@type": "City", "name": "Oakville" }, { "@type": "City", "name": "Malone" },
+              { "@type": "City", "name": "Porter" }
+            ],
+            "image": "https://dynamicstylz.com/media/beautiful-hair.jpg",
+            "offers": { "@type": "Offer", "price": "Consultation", "priceCurrency": "USD", "url": "https://dynamicstylz.com/#services" }
+          },
+          {
+            "@type": "Service",
+            "@id": "https://dynamicstylz.com/#service/perms-texture",
+            "name": "Perms & Texture",
+            "description": "Classic perms and soft modern waves — movement tailored to your hair type and lifestyle.",
+            "serviceType": "Perm",
+            "category": "Specialty Services",
+            "provider": { "@id": "https://dynamicstylz.com/#business" },
+            "areaServed": [
+              { "@type": "City", "name": "Elma" }, { "@type": "City", "name": "Montesano" },
+              { "@type": "City", "name": "McCleary" }, { "@type": "City", "name": "Aberdeen" },
+              { "@type": "City", "name": "Hoquiam" }, { "@type": "City", "name": "Satsop" },
+              { "@type": "City", "name": "Oakville" }, { "@type": "City", "name": "Malone" },
+              { "@type": "City", "name": "Porter" }
+            ],
+            "image": "https://dynamicstylz.com/media/stylist-at-work.jpg",
+            "offers": { "@type": "Offer", "price": "Consultation", "priceCurrency": "USD", "url": "https://dynamicstylz.com/#services" }
+          },
+          {
+            "@type": "Service",
+            "@id": "https://dynamicstylz.com/#service/kids-cuts",
+            "name": "Kids' Cuts & First Chairs",
+            "description": "First haircuts, back-to-school trims, and sensory-friendly appointments — calm pace, gentle tools.",
+            "serviceType": "Kids' Haircut",
+            "category": "Kids' Hair Services",
+            "provider": { "@id": "https://dynamicstylz.com/#business" },
+            "areaServed": [
+              { "@type": "City", "name": "Elma" }, { "@type": "City", "name": "Montesano" },
+              { "@type": "City", "name": "McCleary" }, { "@type": "City", "name": "Aberdeen" },
+              { "@type": "City", "name": "Hoquiam" }, { "@type": "City", "name": "Satsop" },
+              { "@type": "City", "name": "Oakville" }, { "@type": "City", "name": "Malone" },
+              { "@type": "City", "name": "Porter" }
+            ],
+            "image": "https://dynamicstylz.com/media/kids-cut.jpg",
+            "offers": { "@type": "Offer", "price": "Consultation", "priceCurrency": "USD", "url": "https://dynamicstylz.com/#services" }
+          },
+          {
+            "@type": "Service",
+            "@id": "https://dynamicstylz.com/#service/mens-cuts",
+            "name": "Men's Cuts & Clean-Ups",
+            "description": "Fades, tapers, clipper cuts, and classic scissor work — quick, precise, Monday-morning ready.",
+            "serviceType": "Men's Haircut",
+            "category": "Men's Hair Services",
+            "provider": { "@id": "https://dynamicstylz.com/#business" },
+            "areaServed": [
+              { "@type": "City", "name": "Elma" }, { "@type": "City", "name": "Montesano" },
+              { "@type": "City", "name": "McCleary" }, { "@type": "City", "name": "Aberdeen" },
+              { "@type": "City", "name": "Hoquiam" }, { "@type": "City", "name": "Satsop" },
+              { "@type": "City", "name": "Oakville" }, { "@type": "City", "name": "Malone" },
+              { "@type": "City", "name": "Porter" }
+            ],
+            "image": "https://dynamicstylz.com/media/mens-cut.jpg",
+            "offers": { "@type": "Offer", "price": "Consultation", "priceCurrency": "USD", "url": "https://dynamicstylz.com/#services" }
+          },
+          {
+            "@type": "Service",
+            "@id": "https://dynamicstylz.com/#service/event-styling",
+            "name": "Event Styling, Brows & Makeup",
+            "description": "Weddings, prom, homecoming — updos, brows, and makeup that hold through the dance floor.",
+            "serviceType": "Event Hair Styling",
+            "category": "Specialty Services",
+            "provider": { "@id": "https://dynamicstylz.com/#business" },
+            "areaServed": [
+              { "@type": "City", "name": "Elma" }, { "@type": "City", "name": "Montesano" },
+              { "@type": "City", "name": "McCleary" }, { "@type": "City", "name": "Aberdeen" },
+              { "@type": "City", "name": "Hoquiam" }, { "@type": "City", "name": "Satsop" },
+              { "@type": "City", "name": "Oakville" }, { "@type": "City", "name": "Malone" },
+              { "@type": "City", "name": "Porter" }
+            ],
+            "image": "https://dynamicstylz.com/media/beautiful-hair.jpg",
+            "offers": { "@type": "Offer", "price": "Consultation", "priceCurrency": "USD", "url": "https://dynamicstylz.com/#services" }
+          },
+
+          {
+            "@type": "Person",
+            "@id": "https://dynamicstylz.com/#person/amber",
+            "name": "Amber Aho",
+            "jobTitle": "Owner & Master Stylist",
+            "description": "Amber has spent more than two decades turning small-town chairs into safe, welcoming spaces. She built Dynamic Stylz as a place where grandparents, teenagers, toddlers, and everyone in between can sit down, be listened to, and leave feeling a little more like themselves.",
+            "image": "https://dynamicstylz.com/media/amber.png",
+            "knowsAbout": [
+              "Women's haircuts",
+              "Men's haircuts",
+              "Kids' first haircuts",
+              "Balayage",
+              "Dimensional color",
+              "Highlights",
+              "Gray blending",
+              "Perms",
+              "Event styling",
+              "Sensory-friendly appointments"
+            ],
+            "worksFor": { "@id": "https://dynamicstylz.com/#business" },
+            "hasCredential": {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "experience",
+              "name": "23+ years behind the chair"
+            }
+          },
+
+          {
+            "@type": "FAQPage",
+            "@id": "https://dynamicstylz.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Where is Dynamic Stylz Salon located?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dynamic Stylz Salon is at 313 W Main St in downtown Elma, WA — the third door down from Dollar Tree on Main Street. Free alley parking is behind the building. We serve Elma, Montesano, McCleary, Satsop, and the greater Grays Harbor County area."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are your hours?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We are open Monday through Thursday 10am–5pm and Friday 10am–4pm. We are closed Saturday and Sunday. Call or text (360) 581-2428 to book."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you accept walk-ins?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Walk-ins are welcome whenever a stylist is available, but appointments are preferred — especially for color, balayage, and perms. Text (360) 581-2428 and we will find the next open chair."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does a haircut cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pricing varies by length, density, and time in the chair. A free consultation is always the first step — text Amber at (360) 581-2428 for a quote tailored to your hair."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you do balayage and highlights?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Amber specializes in dimensional, lived-in color — hand-painted balayage, traditional foiled highlights, all-over color, and gentle gray blending. A short consultation is always free so we can match the technique to your hair."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer sensory-friendly appointments?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Mention it when you book and we will dim the lights, skip the small talk, and pace the appointment around what you need. Kids and adults both welcome."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you cut kids' hair?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely — first haircuts are a specialty. We keep the appointment quick, friendly, and as fun as possible, with sensory-friendly accommodations available on request."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What forms of payment do you accept?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We take cash, debit, and all major credit cards."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I book an appointment?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The fastest way is to text or call (360) 581-2428. You can also message us on our Facebook page and we will get back to you the same business day."
+                }
+              }
+            ]
+          },
+
+          {
+            "@type": "Organization",
+            "@id": "https://dynamicstylz.com/#org",
+            "name": "Dynamic Stylz Salon LLC",
+            "url": "https://dynamicstylz.com/",
+            "logo": "https://dynamicstylz.com/media/branding/logo.png",
+            "sameAs": [
+              "https://www.facebook.com/AmberStuderStylist/",
+              "https://share.google/Xkcxld1KoMv3huCpK"
+            ],
+            "founder": { "@id": "https://dynamicstylz.com/#person/amber" },
+            "foundingDate": "2022",
+            "foundingLocation": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Elma",
+                "addressRegion": "WA",
+                "addressCountry": "US"
+              }
+            }
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://dynamicstylz.com/#website",
+            "url": "https://dynamicstylz.com/",
+            "name": "Dynamic Stylz Salon",
+            "publisher": { "@id": "https://dynamicstylz.com/#org" },
+            "inLanguage": "en-US"
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://dynamicstylz.com/#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://dynamicstylz.com/"
+              }
+            ]
           }
         ]
       }
@@ -101,6 +531,7 @@
           <a href="#services">Services</a>
           <a href="#reviews">Reviews</a>
           <a href="#visit">Visit</a>
+          <a href="#faq">FAQ</a>
         </nav>
 
         <a class="btn btn--ghost nav__cta" href="sms:+13605812428"
@@ -121,6 +552,7 @@
         <a href="#services">Services</a>
         <a href="#reviews">Reviews</a>
         <a href="#visit">Visit</a>
+        <a href="#faq">FAQ</a>
         <a class="btn btn--solid" href="sms:+13605812428">Book with Amber</a>
       </div>
     </header>
@@ -136,6 +568,10 @@
             Your hair,<br />
             your style —<br />
             <em>done right.</em>
+            <span class="sr-only">
+              — Dynamic Stylz Salon, a hair salon in Elma, WA serving
+              Grays Harbor County.
+            </span>
           </h1>
           <p class="hero__lede">
             A warm, welcoming chair on Main Street. Free consultations,
@@ -176,15 +612,18 @@
 
         <div class="hero__art">
           <div class="hero__media">
-            <img
-              class="hero__photo"
-              src="media/beautiful-hair.jpg"
-              alt="Long, dimensional hair styled at Dynamic Stylz"
-              width="1536"
-              height="2048"
-              fetchpriority="high"
-              decoding="async"
-            />
+            <picture>
+              <source srcset="media/beautiful-hair.webp" type="image/webp" />
+              <img
+                class="hero__photo"
+                src="media/beautiful-hair.jpg"
+                alt="Long, dimensional hair styled at Dynamic Stylz Salon in Elma, WA"
+                width="1536"
+                height="2048"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
             <div class="hero__mark" aria-hidden="true">
               <svg viewBox="0 0 64 64"><use href="#tree-mark" /></svg>
             </div>
@@ -224,7 +663,7 @@
                 <img
                   class="portrait__img"
                   src="media/amber.png"
-                  alt="Amber Aho, owner and stylist at Dynamic Stylz Salon"
+                  alt="Amber Aho, owner and master stylist at Dynamic Stylz Salon in Elma, WA"
                   width="448"
                   height="434"
                   loading="lazy"
@@ -239,7 +678,12 @@
 
           <div class="about__body">
             <p class="eyebrow">Meet your stylist</p>
-            <h2 class="section__title">Amber Aho — owner &amp; stylist.</h2>
+            <h2 class="section__title">
+              Amber Aho — owner &amp; stylist.
+              <span class="sr-only">
+                Master hair stylist at Dynamic Stylz Salon in Elma, WA.
+              </span>
+            </h2>
             <p class="lede">
               Amber has spent more than two decades turning small-town chairs
               into safe, welcoming spaces. She built Dynamic Stylz as a place
@@ -270,6 +714,9 @@
           <p class="eyebrow">Services</p>
           <h2 class="section__title">
             Every style, rooted in care.
+            <span class="sr-only">
+              Hair services in Elma &amp; Grays Harbor County, WA.
+            </span>
           </h2>
           <p class="section__lede">
             Every service begins with a complimentary consultation.
@@ -279,14 +726,17 @@
         <div class="services__grid">
           <article class="card">
             <div class="card__media">
-              <img
-                src="media/womens-haircut.jpg"
-                alt="Fresh women's haircut styled at Dynamic Stylz"
-                width="600"
-                height="804"
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source srcset="media/womens-haircut.webp" type="image/webp" />
+                <img
+                  src="media/womens-haircut.jpg"
+                  alt="Women's haircut styled at Dynamic Stylz Salon"
+                  width="600"
+                  height="804"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="card__body">
               <div class="card__icon" aria-hidden="true">
@@ -302,14 +752,17 @@
 
           <article class="card">
             <div class="card__media">
-              <img
-                src="media/beautiful-hair.jpg"
-                alt="Soft, dimensional color on long hair"
-                width="600"
-                height="800"
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source srcset="media/beautiful-hair.webp" type="image/webp" />
+                <img
+                  src="media/beautiful-hair.jpg"
+                  alt="Soft, dimensional balayage color on long hair"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="card__body">
               <div class="card__icon" aria-hidden="true">
@@ -325,14 +778,17 @@
 
           <article class="card">
             <div class="card__media">
-              <img
-                src="media/stylist-at-work.jpg"
-                alt="Stylist finishing a soft, textured wave"
-                width="1200"
-                height="630"
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source srcset="media/stylist-at-work.webp" type="image/webp" />
+                <img
+                  src="media/stylist-at-work.jpg"
+                  alt="Stylist finishing a soft, textured wave"
+                  width="1200"
+                  height="630"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="card__body">
               <div class="card__icon" aria-hidden="true">
@@ -348,14 +804,17 @@
 
           <article class="card">
             <div class="card__media">
-              <img
-                src="media/kids-cut.jpg"
-                alt="Happy child after a first-chair kids' cut"
-                width="600"
-                height="599"
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source srcset="media/kids-cut.webp" type="image/webp" />
+                <img
+                  src="media/kids-cut.jpg"
+                  alt="Happy child after a first-chair kids' cut at Dynamic Stylz Salon"
+                  width="600"
+                  height="599"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="card__body">
               <div class="card__icon" aria-hidden="true">
@@ -371,14 +830,17 @@
 
           <article class="card">
             <div class="card__media">
-              <img
-                src="media/mens-cut.jpg"
-                alt="Classic men's cut finished at the chair"
-                width="600"
-                height="868"
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source srcset="media/mens-cut.webp" type="image/webp" />
+                <img
+                  src="media/mens-cut.jpg"
+                  alt="Classic men's cut finished at Dynamic Stylz Salon"
+                  width="600"
+                  height="868"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="card__body">
               <div class="card__icon" aria-hidden="true">
@@ -394,15 +856,18 @@
 
           <article class="card">
             <div class="card__media">
-              <img
-                src="media/beautiful-hair.jpg"
-                alt="Event-ready styling with soft waves"
-                width="600"
-                height="800"
-                loading="lazy"
-                decoding="async"
-                style="object-position: center 30%"
-              />
+              <picture>
+                <source srcset="media/beautiful-hair.webp" type="image/webp" />
+                <img
+                  src="media/beautiful-hair.jpg"
+                  alt="Event-ready styling with soft waves"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                  style="object-position: center 30%"
+                />
+              </picture>
             </div>
             <div class="card__body">
               <div class="card__icon" aria-hidden="true">
@@ -436,6 +901,10 @@
           <p class="eyebrow eyebrow--light">The Dynamic Stylz difference</p>
           <h2 class="section__title section__title--light">
             A quieter kind of salon.
+            <span class="sr-only">
+              Sensory-friendly &amp; family appointments at Dynamic Stylz
+              Salon, Elma, WA.
+            </span>
           </h2>
 
           <div class="experience__grid">
@@ -478,6 +947,9 @@
           <p class="eyebrow">With love from Elma</p>
           <h2 class="section__title">
             Real words, from real chairs.
+            <span class="sr-only">
+              Reviews for Dynamic Stylz Salon in Elma, WA.
+            </span>
           </h2>
           <p class="section__lede">
             What clients say after they leave the chair.
@@ -487,15 +959,18 @@
         <div class="reviews__featured">
           <article class="review-card review-card--photo">
             <div class="review-card__media">
-              <img
-                src="media/shannon-j.jpg"
-                alt="Shannon with her finished look"
-                width="900"
-                height="1200"
-                loading="lazy"
-                decoding="async"
-                style="object-position: center 72%"
-              />
+              <picture>
+                <source srcset="media/shannon-j.webp" type="image/webp" />
+                <img
+                  src="media/shannon-j.jpg"
+                  alt="Shannon with her finished look from Dynamic Stylz Salon"
+                  width="900"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                  style="object-position: center 72%"
+                />
+              </picture>
             </div>
             <div class="review-card__body">
               <div class="review-card__stars" aria-label="Five stars">
@@ -517,14 +992,17 @@
 
           <article class="review-card review-card--photo">
             <div class="review-card__media">
-              <img
-                src="media/karna.jpg"
-                alt="Karna with her new color from Dynamic Stylz"
-                width="600"
-                height="800"
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source srcset="media/karna.webp" type="image/webp" />
+                <img
+                  src="media/karna.jpg"
+                  alt="Karna with her new color from Dynamic Stylz Salon"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="review-card__body">
               <div class="review-card__stars" aria-label="Five stars">
@@ -619,7 +1097,12 @@
         <div class="visit__grid">
           <div class="visit__copy">
             <p class="eyebrow">Visit the chair</p>
-            <h2 class="section__title">313 W Main St · Elma, WA</h2>
+            <h2 class="section__title">
+              313 W Main St · Elma, WA
+              <span class="sr-only">
+                — Dynamic Stylz Salon, serving Grays Harbor County.
+              </span>
+            </h2>
             <p class="lede">
               Third door down from Dollar Tree on Main Street. Park behind
               Dollar Tree (alley entrance) or right on Main.
@@ -704,6 +1187,120 @@
           </aside>
         </div>
       </section>
+
+      <!-- ============== FAQ ============== -->
+      <!-- Mined from Google "People Also Ask" patterns for hair-salon queries.
+           Rendered as <details>/<summary> — keyboard-accessible, crawlable,
+           no JS required. Mirrors the FAQPage JSON-LD in <head>. -->
+      <section class="faq" id="faq">
+        <header class="section__head">
+          <p class="eyebrow">Good to know</p>
+          <h2 class="section__title">
+            Questions, answered.
+            <span class="sr-only">
+              Frequently asked questions about Dynamic Stylz Salon in
+              Elma, WA.
+            </span>
+          </h2>
+          <p class="section__lede">
+            The short versions — text Amber at
+            <a href="sms:+13605812428">(360) 581-2428</a> for anything else.
+          </p>
+        </header>
+
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary><h3>Where is Dynamic Stylz Salon located?</h3></summary>
+            <p>
+              Dynamic Stylz Salon is at 313 W Main St in downtown Elma, WA —
+              the third door down from Dollar Tree on Main Street. Free alley
+              parking is behind the building. We serve Elma, Montesano,
+              McCleary, Satsop, and the greater Grays Harbor County area.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary><h3>What are your hours?</h3></summary>
+            <p>
+              We are open Monday through Thursday 10am–5pm and Friday
+              10am–4pm. We are closed Saturday and Sunday. Call or text
+              <a href="sms:+13605812428">(360) 581-2428</a> to book.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary><h3>Do you accept walk-ins?</h3></summary>
+            <p>
+              Walk-ins are welcome whenever a stylist is available, but
+              appointments are preferred — especially for color, balayage,
+              and perms. Text
+              <a href="sms:+13605812428">(360) 581-2428</a> and we will
+              find the next open chair.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary><h3>How much does a haircut cost?</h3></summary>
+            <p>
+              Pricing varies by length, density, and time in the chair.
+              A free consultation is always the first step —
+              <a href="sms:+13605812428">text Amber</a> for a quote tailored
+              to your hair.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary><h3>Do you do balayage and highlights?</h3></summary>
+            <p>
+              Yes. Amber specializes in dimensional, lived-in color —
+              hand-painted balayage, traditional foiled highlights,
+              all-over color, and gentle gray blending. A short consultation
+              is always free so we can match the technique to your hair.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary><h3>Do you offer sensory-friendly appointments?</h3></summary>
+            <p>
+              Yes. Mention it when you book and we will dim the lights,
+              skip the small talk, and pace the appointment around what
+              you need. Kids and adults both welcome.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary><h3>Do you cut kids' hair?</h3></summary>
+            <p>
+              Absolutely — first haircuts are a specialty. We keep the
+              appointment quick, friendly, and as fun as possible, with
+              sensory-friendly accommodations available on request.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary><h3>What forms of payment do you accept?</h3></summary>
+            <p>
+              We take cash, debit, and all major credit cards.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary><h3>How do I book an appointment?</h3></summary>
+            <p>
+              The fastest way is to text or call
+              <a href="sms:+13605812428">(360) 581-2428</a>. You can also
+              message us on
+              <a
+                href="https://www.facebook.com/AmberStuderStylist/"
+                target="_blank"
+                rel="noopener"
+                >Facebook</a
+              >
+              and we will get back to you the same business day.
+            </p>
+          </details>
+        </div>
+      </section>
     </main>
 
     <!-- ============== FOOTER ============== -->
@@ -732,11 +1329,24 @@
           <a href="#services">Services</a>
           <a href="#reviews">Reviews</a>
           <a href="#visit">Visit</a>
+          <a href="#faq">FAQ</a>
         </nav>
-        <div class="foot__meta">
+        <address class="foot__meta">
+          <!--
+            Name/Address/Phone in crawlable plain text on every page is the
+            single highest-leverage local-SEO signal. Google cross-checks
+            on-site NAP against the Google Business Profile and other
+            citation sites — keep the phrasing identical to what's on GBP.
+          -->
+          <p class="foot__nap">
+            <span class="sr-only">Address: </span>313 W Main St, Elma, WA 98541
+            <span aria-hidden="true"> · </span>
+            <span class="sr-only">Phone: </span>
+            <a href="tel:+13605812428">(360) 581-2428</a>
+          </p>
           <p>© <span id="year"></span> Dynamic Stylz Salon, LLC</p>
           <p>Crafted with care in Elma, WA · Grays Harbor County</p>
-        </div>
+        </address>
       </div>
     </footer>
 
@@ -907,5 +1517,11 @@
     </svg>
 
     <script src="app.js" defer></script>
+
+    <!-- Vercel Analytics — privacy-friendly pageview + referrer tracking.
+         Auto-respects Do Not Track. Zero-config for the linked project;
+         the /_vercel/insights/* endpoints are injected by Vercel at
+         deploy time, so no-ops on local preview. -->
+    <script defer src="/_vercel/insights/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,82 @@
+# Dynamic Stylz Salon — robots.txt
+#
+# Split by purpose for auditability:
+#   1. Generic fallback — allow with a few build/noise dirs blocked.
+#   2. Classic search crawlers — explicit allow.
+#   3. AI retrieval crawlers (query-time) — drive citations in
+#      ChatGPT Search / Claude / Perplexity / DuckAssist. Explicit allow.
+#   4. AI training crawlers — allow; a hyperlocal salon has nothing
+#      to lose by being learned.
+#   5. Known bad actors — explicit deny.
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /private/
+
+# Classic search
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# AI retrieval (query-time)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+# AI training
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Bad actors — ignores opt-outs in the wild.
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://dynamicstylz.com/sitemap.xml
+Host: https://dynamicstylz.com

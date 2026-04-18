@@ -1901,3 +1901,127 @@ a.brand:hover {
     animation-iteration-count: infinite !important;
   }
 }
+
+/* =========================================================
+   Utility: screen-reader-only text
+   Packs locality phrases onto H1/H2 for crawlers while
+   keeping the visible editorial typography clean.
+   ========================================================= */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* =========================================================
+   FAQ — <details>/<summary> accordion
+   Editorial look: stacked hairlines, serif questions,
+   body-weight answers. Keyboard + JS-free.
+   ========================================================= */
+.faq {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: clamp(4rem, 8vw, 7rem) var(--gutter) clamp(5rem, 9vw, 8rem);
+}
+
+.faq__list {
+  margin: 2.5rem auto 0;
+  max-width: 880px;
+  border-top: 1px solid rgba(46, 42, 36, 0.14);
+}
+
+.faq__item {
+  border-bottom: 1px solid rgba(46, 42, 36, 0.14);
+}
+
+/* Reset default details marker; draw our own chevron on the right. */
+.faq__item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.4rem 3rem 1.4rem 0.1rem;
+  position: relative;
+  display: block;
+  color: var(--ink);
+  transition: color 140ms var(--ease);
+}
+.faq__item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq__item summary h3 {
+  display: inline;
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.15rem, 1.9vw, 1.5rem);
+  line-height: 1.25;
+  letter-spacing: -0.008em;
+  color: inherit;
+}
+
+/* Chevron — drawn with currentColor, rotates on open. */
+.faq__item summary::after {
+  content: "";
+  position: absolute;
+  right: 0.2rem;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-right: 1.5px solid var(--taupe-deep);
+  border-bottom: 1.5px solid var(--taupe-deep);
+  transform: translateY(-70%) rotate(45deg);
+  transition: transform 220ms var(--ease), border-color 140ms var(--ease);
+}
+.faq__item[open] summary::after {
+  transform: translateY(-30%) rotate(-135deg);
+  border-color: var(--ink);
+}
+
+.faq__item summary:hover,
+.faq__item summary:focus-visible {
+  color: var(--taupe-deep);
+  outline: none;
+}
+.faq__item summary:focus-visible {
+  box-shadow: 0 0 0 2px var(--rose-glow);
+  border-radius: 4px;
+}
+
+.faq__item p {
+  margin: 0 3rem 1.4rem 0.1rem;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+.faq__item p a {
+  color: var(--ink);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.faq__item p a:hover {
+  color: var(--taupe-deep);
+}
+
+/* Footer NAP line — compact, single row, inherits foot__meta color. */
+.foot__nap {
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+.foot__nap a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.foot__nap a:hover {
+  opacity: 0.8;
+}
+

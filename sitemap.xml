@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Single-page marketing site: sitemap has exactly one URL, the canonical
+  origin. Google explicitly ignores fragment-only URLs (e.g. /#services)
+  in sitemaps — they're deduplicated against the root document at
+  indexing time, so declaring them inflates the sitemap with no benefit.
+  Re-introduce additional entries only when real separately-addressable
+  pages ship (/services, /blog/*, etc).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://dynamicstylz.com/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
