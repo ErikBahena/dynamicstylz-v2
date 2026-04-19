@@ -51,10 +51,24 @@
     }
     if (!target) return;
     e.preventDefault();
-    target.scrollIntoView({
-      behavior: prefersReduced ? "auto" : "smooth",
-      block: "start",
-    });
+
+    // Special case: the nav is position:sticky, so scrollIntoView() on
+    // #top (or any target that IS the sticky header) is a no-op in most
+    // browsers — the header is "already in view." For page-top links,
+    // scroll the window itself instead.
+    const isTopTarget =
+      href === "#top" || target.matches(".nav, [data-scroll-top]");
+    if (isTopTarget) {
+      window.scrollTo({
+        top: 0,
+        behavior: prefersReduced ? "auto" : "smooth",
+      });
+    } else {
+      target.scrollIntoView({
+        behavior: prefersReduced ? "auto" : "smooth",
+        block: "start",
+      });
+    }
     // preserve deep-linking without triggering default jump
     if (history.pushState) history.pushState(null, "", href);
   });
